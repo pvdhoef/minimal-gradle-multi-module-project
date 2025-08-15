@@ -18,10 +18,10 @@ class Application(val libraryService: LibraryService) {
         println("Library Service initialized with message: '${libraryService.message()}'")
     }
 
-	@GetMapping("/")
-	fun home(): String {
-		return libraryService.message();
-	}
+    @GetMapping("/")
+    fun home(): String {
+        return libraryService.message();
+    }
 }
 
 fun main(args: Array<String>) {
@@ -29,5 +29,5 @@ fun main(args: Array<String>) {
     for (arg in args) {
         println("Argument: '${arg}'")
     }
-	runApplication<Application>(*args)
+    runApplication<Application>(*args)
 }
