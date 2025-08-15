@@ -10,4 +10,5 @@ Other resources:
 - [Create your Compose Multiplatform app](
     https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-create-first-app.html)
 
+## Centralized build configuration
 
