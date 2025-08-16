@@ -1,10 +1,12 @@
 # === Environment variables
 .env
 
-# === Gradle / Kotlin / Java
+# === Gradle
 .gradle/
-.kotlin/
 build/
+
+# === Kotlin
+.kotlin/
 
 # === IntelliJ IDEA
 .idea/
