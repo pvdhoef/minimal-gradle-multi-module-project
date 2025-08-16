@@ -1,7 +1,7 @@
 # Minimal Gradle Multi Module Project
 
-This is a minimal Gradle based multi-module Spring Boot project written in Kotlin
-modeled after [Creating a Multi Module Project](https://spring.io/guides/gs/multi-module)
+This is a minimal Gradle based multi-module Spring Boot project, written in Kotlin,
+and modeled after [Creating a Multi Module Project](https://spring.io/guides/gs/multi-module)
 on the [Spring.io](https://spring.io/) site.
 
 Other resources:
@@ -21,5 +21,4 @@ and a central [version catalog](https://docs.gradle.org/current/userguide/versio
 This is a modern approach and [avoids cross-project configuration](
 https://docs.gradle.org/current/userguide/sharing_build_logic_between_subprojects.html#sec:convention_plugins_vs_cross_configuration)
 using `subprojects` and `allprojects`.
-In the long run, cross-project configuration usually grows in complexity and becomes a burden.
 
