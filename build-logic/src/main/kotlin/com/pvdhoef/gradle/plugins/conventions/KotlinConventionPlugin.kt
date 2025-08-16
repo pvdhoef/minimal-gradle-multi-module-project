@@ -1,3 +1,5 @@
+package com.pvdhoef.gradle.plugins.conventions
+
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.JavaVersion
@@ -12,8 +14,12 @@ class KotlinConventionPlugin : Plugin<Project> {
 
         println("Applying Kotlin conventions to project: '${project.name}'")
 
-        project.pluginManager.apply("org.jetbrains.kotlin.jvm") // Aka `kotlin("jvm")`.
-        project.pluginManager.apply("org.jetbrains.kotlin.plugin.spring") // Aka `kotlin("plugin.spring")`.
+        // Apply the Kotlin JVM plugin.
+        // Aka `kotlin("jvm")`.
+        // Aka `alias(libs.plugins.kotlin.jvm)`
+        // The `alias` syntax can't be used here, so the string ID used. And the version cannot be specified either.
+        // The root project applies the correct version via `plugins { alias(libs.plugins.kotlin.jvm) apply false }`.
+        project.pluginManager.apply("org.jetbrains.kotlin.jvm")
 
         // This is similar to the `java { toolchain { ... } ... etc. }` DSL in `build.gradle.kts`.
         project.extensions.configure<JavaPluginExtension> {

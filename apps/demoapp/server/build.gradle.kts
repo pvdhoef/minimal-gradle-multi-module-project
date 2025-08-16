@@ -5,17 +5,18 @@ group = "com.pvdhoef"
 version = "0.0.1-SNAPSHOT"
 
 plugins {
-    id("com.pvdhoef.kotlin-conventions")
-    id("org.springframework.boot")
-    id("io.spring.dependency-management")
-    kotlin("plugin.jpa")
-    kotlin("plugin.allopen")
+    id("com.pvdhoef.gradle.plugins.conventions.kotlin-conventions")
+    alias(libs.plugins.kotlin.spring)
+    alias(libs.plugins.spring.boot)
+    alias(libs.plugins.spring.dependency.management)
+    alias(libs.plugins.kotlin.jpa)
+    alias(libs.plugins.kotlin.allopen)
 }
 
 dependencies {
 
     implementation(project(":kotlin-demolib"))
-    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation(libs.spring.boot.starter.web)
 }
 
 allOpen {
@@ -24,6 +25,7 @@ allOpen {
     annotation("jakarta.persistence.MappedSuperclass")
 }
 
-tasks.withType<Test> {
-    useJUnitPlatform()
-}
+// TODO: This should probably be moved to the Kotlin conventions plugin.
+// tasks.withType<Test> {
+//     useJUnitPlatform()
+// }

@@ -8,15 +8,14 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin")
-    implementation("org.jetbrains.kotlin:kotlin-allopen")
+    implementation(libs.kotlin.gradle.plugin)
 }
 
 gradlePlugin {
     plugins {
         register("KotlinConventionPlugin") {
-            id = "com.pvdhoef.kotlin-conventions"
-            implementationClass = "KotlinConventionPlugin"
+            id = "com.pvdhoef.gradle.plugins.conventions.kotlin-conventions"
+            implementationClass = "com.pvdhoef.gradle.plugins.conventions.KotlinConventionPlugin"
         }
     }
 }
