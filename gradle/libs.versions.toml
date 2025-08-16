@@ -1,3 +1,6 @@
+# Gradle Version Catalog
+# https://docs.gradle.org/current/userguide/version_catalogs.html
+
 [versions]
 
 kotlin = "2.2.10" # https://kotlinlang.org/docs/releases.html
