@@ -6,7 +6,7 @@ on the [Spring.io](https://spring.io/) site.
 
 Other resources:
 - Gradle's [Multi-Project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
-- [Kotlin Multiplatform Wizard](kmp.jetbrains.com)
+- [Kotlin Multiplatform Wizard](https://kmp.jetbrains.com/)
 - [Create your Compose Multiplatform app](
     https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-create-first-app.html)
 
