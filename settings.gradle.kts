@@ -5,12 +5,6 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
     }
-
-    versionCatalogs {
-        create("libs") {
-            from(files("build.versions.catalog.toml"))
-        }
-    }
 }
 
 pluginManagement {
