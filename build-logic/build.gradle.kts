@@ -1,3 +1,7 @@
+
+// Maybe it's not such a good idea to store all build output in the main build directory.
+// buildDir = file("../build/build-logic")
+
 plugins {
     `kotlin-dsl`
 }
