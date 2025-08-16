@@ -4,7 +4,10 @@ This is a minimal Gradle based multi-module Spring Boot project, written in Kotl
 and modeled after [Creating a Multi Module Project](https://spring.io/guides/gs/multi-module)
 on the [Spring.io](https://spring.io/) site.
 
-Other resources:
+A multi-project build consists of a root project and one or more subprojects,
+all defined in a single `settings.gradle.kts` file.
+
+Resources:
 - Gradle's [Multi-Project Builds](https://docs.gradle.org/current/userguide/multi_project_builds.html)
 - [Kotlin Multiplatform Wizard](https://kmp.jetbrains.com/)
 - [Create your Compose Multiplatform app](
